@@ -102,7 +102,6 @@ if __name__ == "__main__":
             batch_dict = tuple(t.to(device) for t in batch_dict)
             outputs = model(
                 batch_dict[0],
-                clinical_feature_embeddings = batch_dict[4],
                 # attention_mask=batch_dict[1],
                 labels = batch_dict[3]
                 )
