@@ -198,17 +198,6 @@ if __name__ == "__main__":
             f.close()
             
             
-            ########準備刪掉區(各自迴圈print出結果)########
-            #test_predict=torch.argmax(logits,1)
-            #for h in test_predict:
-            #    print("預測的答案: ",answer_dic.to_text(int(h)))
-            #print(" ")
-            
-            #for i in batch_dict[3]:
-            #    print("實際的答案: ",answer_dic.to_text(int(i)))
-            #print(" ")
-            #print("-----------------------------------------------")
-            ########準備刪掉區(各自迴圈print出結果)########
             
             #這裡進行畫圖表。在cmd中，進到runs檔案夾中，下: tensorboard --logdir runs --port=4100
             #在瀏覽器下localhost:4100，就可以看到圖表
